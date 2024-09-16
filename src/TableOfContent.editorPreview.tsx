@@ -1,9 +1,9 @@
 import { ReactElement, createElement } from "react";
-import { HelloWorldSample } from "./components/HelloWorldSample";
+import { GeneratedTableOfContent } from "./components/GeneratedTableOfContent";
 import { TableOfContentPreviewProps } from "../typings/TableOfContentProps";
 
-export function preview({ sampleText }: TableOfContentPreviewProps): ReactElement {
-    return <HelloWorldSample sampleText={sampleText} />;
+export function preview({ depth }: TableOfContentPreviewProps): ReactElement {
+    return <GeneratedTableOfContent depth={depth ? depth : 3} />;
 }
 
 export function getPreviewCss(): string {

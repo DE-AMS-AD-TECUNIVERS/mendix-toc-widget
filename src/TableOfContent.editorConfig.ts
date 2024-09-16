@@ -112,20 +112,18 @@ export function getProperties(
     return defaultProperties;
 }
 
-// export function check(_values: TableOfContentPreviewProps): Problem[] {
-//     const errors: Problem[] = [];
-//     // Add errors to the above array to throw errors in Studio and Studio Pro.
-//     /* Example
-//     if (values.myProperty !== "custom") {
-//         errors.push({
-//             property: `myProperty`,
-//             message: `The value of 'myProperty' is different of 'custom'.`,
-//             url: "https://github.com/myrepo/mywidget"
-//         });
-//     }
-//     */
-//     return errors;
-// }
+export function check(_values: TableOfContentPreviewProps): Problem[] {
+     const errors: Problem[] = [];
+     // Add errors to the above array to throw errors in Studio and Studio Pro.
+     if (_values.depth == null || _values.depth < 1 || _values.depth > 6) {
+         errors.push({
+             property: `depth`,
+             message: `The value of 'depth' must be between 1 and 6.`,
+             url: "https://github.com/DE-AMS-AD-TECUNIVERS/mendix-toc-widget"
+         });
+     }
+     return errors;
+}
 
 // export function getPreview(values: TableOfContentPreviewProps, isDarkMode: boolean, version: number[]): PreviewProps {
 //     // Customize your pluggable widget appearance for Studio Pro.

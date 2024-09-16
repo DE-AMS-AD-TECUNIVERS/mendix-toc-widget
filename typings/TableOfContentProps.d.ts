@@ -3,14 +3,15 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
 
 export interface TableOfContentContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
+    content?: ReactNode;
+    depth: number;
 }
 
 export interface TableOfContentPreviewProps {
@@ -23,5 +24,6 @@ export interface TableOfContentPreviewProps {
     styleObject?: CSSProperties;
     readOnly: boolean;
     renderMode?: "design" | "xray" | "structure";
-    sampleText: string;
+    content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    depth: number | null;
 }
