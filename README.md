@@ -11,7 +11,7 @@
 [link to sandbox]
 
 ## Issues, suggestions and feature requests
-Please provide feed backs to the project's GitHub issue tracker:
+Please provide feedback to the project's GitHub issue tracker:
 [[GitHub issues]](https://github.com/DE-AMS-AD-TECUNIVERS/mendix-toc-widget/issues)
 
 ## Development and contribution
