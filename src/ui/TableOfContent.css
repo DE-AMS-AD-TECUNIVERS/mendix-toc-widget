@@ -1,26 +1,26 @@
 /*
 Place your custom CSS here
 */
-.table-of-content {
-    #list-toc-generated {
+.table-of-content-widget {
+    .list-toc-generated {
         list-style: none;
         padding-inline-start: 0px !important;
     }
       
-    #list-toc-generated .toc-element {
+    .list-toc-generated .toc-element {
         break-inside: avoid;
     }
     
-    #list-toc-generated .toc-element-level-1 {
+    .list-toc-generated .toc-element-level-1 {
         margin-top: 16px;
     }
 
-    #list-toc-generated .toc-element-level-2 {
+    .list-toc-generated .toc-element-level-2 {
         margin-top: 8px;
         margin-left: 16px;
     }
     
-    #list-toc-generated .toc-element-level-3 {
+    .list-toc-generated .toc-element-level-3 {
         margin-left: 32px;
     }
 }

@@ -5,7 +5,7 @@
             <widgetFile path="TableOfContent.xml"/>
         </widgetFiles>
         <files>
-            <file path="eviden-germany/tableofcontent"/>
+            <file path="eviden/tableofcontent"/>
         </files>
     </clientModule>
 </package>

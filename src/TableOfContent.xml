@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="eviden-germany.tableofcontent.TableOfContent" 
+<widget id="eviden.tableofcontent.TableOfContent" 
         pluginWidget="true" 
         needsEntityContext="true" 
         offlineCapable="true"
@@ -9,7 +9,7 @@
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Table Of Content</name>
     <description>Generate a table of content for your Mendix page</description>
-    <icon/>
+    <studioProCategory>Document generation</studioProCategory>
     <properties>
         <propertyGroup caption="General">
             <property key="content" type="widgets" required="false">
